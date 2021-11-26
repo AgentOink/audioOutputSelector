@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Audio Output Selector",
+  "version": "1.0",
+  "description": "Allows you to change the audio output device of <audio> and <video> elements.",
+  "homepage_url": "https://github.com/AgentOink/audioOutputSelector/",
+  "icons": {
+    "32": "icons/audioOutputSelector-32.png",
+    "48": "icons/audioOutputSelector-48.png",
+    "96": "icons/audioOutputSelector-96.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_icon": "icons/audioOutputSelector-96.png",
+    "default_title": "Audio Output Selector",
+    "default_popup": "popup/popup.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "audioOutputSelector@agentoink.uk"
+    }
+  }
+}

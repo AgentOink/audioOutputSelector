@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+  <div id="main-content" class="main-content">
+    <div class="button select">Select Device</div>
+    <div class="button reset">Reset Device</div>
+    <div id="error-options" class="error-options">
+      <div id="error-option-setsinkid" class="hidden">
+        <p class="highlight">Experimental Audio Output Devices API needs to be enabled.</p>
+        <p>This requires enabling a flag in Firefox's advanced config options.</p>
+        <p>Set <span class="code">media.setsinkid.enabled</span> in <span class="local-link">about:config</span> to
+          <span class="code">true</span>.
+        </p>
+      </div>
+      <div id="error-option-transient" class="hidden">
+        <p class="highlight">Please interact with the webpage, and try
+          again.</p>
+        <p>The Audio Output Devices API requires transient activation. Clicking anywhere on the webpage background
+          should be enough.</p>
+      </div>
+      <div id="error-option-noelements" class="hidden">
+        <p class="highlight">No elements were found that can have their audio output changed.</p>
+      </div>
+      <div id="error-unknown" class="hidden">
+        <p class="highlight">Something unexpected has gone wrong. Please copy the below message and submit a bug report.
+        </p>
+        <textarea id="error-unknown-text"></textarea>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

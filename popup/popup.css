@@ -1,0 +1,100 @@
+*::-webkit-scrollbar {
+  display: none !important;
+}
+
+* {
+scrollbar-width: none !important;
+}
+
+html, body {
+  width: 250px;
+  background-color: #363959;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+textarea {
+  margin: auto;
+  display: block;
+}
+
+.main-content {
+  font-size: 1em;
+}
+
+.error-header {
+  margin-top: 20px;
+  border-radius: 4px;
+  background-color: #ff5c80;
+  text-align: center;
+  padding: 4px 0px;
+}
+
+.error-header p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.local-link {
+  color: #3966CC;
+  text-decoration: #3966CC underline;
+}
+
+.error-options {
+  font-size: 0.8em;
+  margin-top: 8px;
+  border-radius: 4px;
+  background-color: #ff5c80;
+}
+
+.error-options p {
+  padding: 4px 4px 8px 4px;
+  margin: 0;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.note {
+  font-size: 0.8em;
+}
+
+.code {
+  font-family: Monaco, monospace;
+  line-height: 100%;
+  background-color: rgb(169, 169, 169);
+  padding: 0.1em;
+  letter-spacing: -0.05em;
+  word-break: normal;
+  border-radius: 4px;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  border-radius: 4px;
+  margin: 3% auto;
+  padding: 4px;
+  text-align: center;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.select {
+  background-color: #45a1ff;
+}
+
+.select:hover {
+  background-color: #0a84ff;
+}
+
+.reset {
+  background-color: #d7d7db;
+}
+
+.reset:hover {
+  background-color: #b1b1b3;
+}
